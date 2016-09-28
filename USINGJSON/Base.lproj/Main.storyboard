@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="USINGJSON" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efo-s9-SBa">
+                                <rect key="frame" x="272" y="221" width="56" height="30"/>
+                                <color key="backgroundColor" red="0.83556937170000001" green="0.79693895420000005" blue="0.40380149250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="SUBMIT"/>
+                                <connections>
+                                    <action selector="Submit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5My-Nt-bLQ"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter City" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GOn-U2-Fkr">
+                                <rect key="frame" x="184" y="111" width="233" height="30"/>
+                                <color key="backgroundColor" red="0.83556937170000001" green="0.79693895420000005" blue="0.40380149250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Full Address" translatesAutoresizingMaskIntoConstraints="NO" id="DjT-SX-OHH">
+                                <rect key="frame" x="144" y="315" width="313" height="128"/>
+                                <color key="backgroundColor" red="0.83556937170000001" green="0.79693895420000005" blue="0.40380149250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="DjT-SX-OHH" secondAttribute="trailing" constant="90" id="0is-vZ-ndJ"/>
+                            <constraint firstItem="DjT-SX-OHH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="90" id="K3p-uk-ed7"/>
+                            <constraint firstItem="efo-s9-SBa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NHE-0V-1au"/>
+                            <constraint firstItem="GOn-U2-Fkr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="Nuz-Jj-hJN"/>
+                            <constraint firstItem="DjT-SX-OHH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dCx-Ck-WlX"/>
+                            <constraint firstItem="GOn-U2-Fkr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e9O-Mz-wew"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GOn-U2-Fkr" secondAttribute="trailing" constant="100" id="z14-Ww-FRq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="GOn-U2-Fkr" id="sXJ-aT-pUH"/>
+                        <outlet property="textView" destination="DjT-SX-OHH" id="Qtv-sF-52C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="323"/>
+        </scene>
+    </scenes>
+</document>
